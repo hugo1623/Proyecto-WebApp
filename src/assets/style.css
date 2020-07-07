@@ -1,0 +1,23 @@
+#content {
+    margin-top: 40px;
+    /* border: 1px solid rgb(136, 123, 123); */
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 1px 10px grey;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#header {
+    background: #E03137;
+    color: white;
+    margin: 0px;
+    height: 70px;
+    /* line-height: 50px; */
+}
+
+header h1 {
+    display: block;
+    line-height: 60px;
+    font-weight: bold;
+}
