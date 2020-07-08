@@ -21,3 +21,44 @@ header h1 {
     line-height: 60px;
     font-weight: bold;
 }
+
+#nav {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    height: 40px;
+}
+
+#nav ul {
+    margin: 0px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+#nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#nav ul li a {
+    display: block;
+    color: white;
+    height: 40px;
+    line-height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 300ms;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    background: rgb(114, 97, 97);
+    border-radius: 4px;
+}
+
+#footer {
+    margin-top: 50px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color: gray;
+}
