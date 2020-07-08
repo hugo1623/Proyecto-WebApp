@@ -56,6 +56,11 @@ header h1 {
     border-radius: 4px;
 }
 
+#main .jumbotron {
+    padding: 50px;
+    margin-top: 30px;
+}
+
 #footer {
     margin-top: 50px;
     padding-top: 10px;
