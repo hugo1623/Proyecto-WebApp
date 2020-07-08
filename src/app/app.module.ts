@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
 
 //Rutas
-import{routing,appRoutinProviders} from './app.routing' ;
+import{routing,appRoutinProviders} from './app.routing';
+import { ErrorComponent } from './components/error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    ErrorComponent
     
   ],
   imports: [
