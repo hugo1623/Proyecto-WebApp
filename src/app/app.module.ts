@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
 
+import { HttpClientModule } from '@angular/common/http'; 
 //Rutas
 import{routing,appRoutinProviders} from './app.routing';
 import { ErrorComponent } from './components/error/error.component';
@@ -18,7 +19,8 @@ import { ProductoComponent } from './components/producto/producto.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule,
   ],
   providers: [appRoutinProviders],
   bootstrap: [AppComponent]
