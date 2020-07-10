@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { ProductoService} from '../../services/producto.service';
+import { Producto } from 'src/app/models/producto';
 
 @Component({
   selector: 'app-producto',
@@ -10,6 +11,7 @@ import { ProductoService} from '../../services/producto.service';
 })
 export class ProductoComponent  {
   public titulo:string;
+  public productos:Producto[];
 
   constructor(
     private _route:ActivatedRoute,
@@ -22,7 +24,18 @@ export class ProductoComponent  {
   ngOnInit() {
 
     console.log('Productos lista.component.ts Cargado');
-    alert(this._productoservice.getProductos())
+    // alert(this._productoservice.getProductos())
+    this._productoservice.getProductos().subscribe(
+      resul =>{
+        // this.productos= resul;
+        console.log(resul);
+
+      },
+      error =>{
+        console.log(<any>error);
+
+      }
+    );
   }
 
 }
