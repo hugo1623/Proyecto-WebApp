@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-
 import { HttpClientModule } from '@angular/common/http'; 
-import{routing,appRoutinProviders} from './app.routing';
+
 //Rutas
+import{routing,appRoutinProviders} from './app.routing';
+//Componentes
+import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductoComponent } from './components/producto/producto.component';
