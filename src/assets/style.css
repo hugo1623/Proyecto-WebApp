@@ -72,3 +72,8 @@ header h1 {
     border-top: 1px solid #eee;
     color: gray;
 }
+
+#main {
+    padding: 20px;
+    margin-top: 10px;
+}
