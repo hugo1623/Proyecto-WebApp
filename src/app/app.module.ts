@@ -3,19 +3,23 @@ import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ComponentsComponent } from './components/components.component';
 
 import { HttpClientModule } from '@angular/common/http'; 
-//Rutas
 import{routing,appRoutinProviders} from './app.routing';
+//Rutas
+import { ComponentsComponent } from './components/components.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import { ProductoAddComponent } from './components/producto-add/producto-add.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsComponent,
     ErrorComponent,
-    ProductoComponent
+    ProductoComponent,
+    ProductoAddComponent
+    
     
   ],
   imports: [

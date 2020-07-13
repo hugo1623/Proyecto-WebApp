@@ -16,6 +16,7 @@ export class ProductoService {
     this.url = GLOBAL.url;
   }
   getProductos(){
+    return " TEXTO DESDE EL SERVICIO";
     return this._http.get(this.url + 'productos')
     .pipe(map(res => res));
   }

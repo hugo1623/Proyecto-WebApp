@@ -13,6 +13,8 @@ export class ProductoComponent  {
   public titulo:string;
   public productos:Producto[];
 
+
+
   constructor(
     private _route:ActivatedRoute,
     private _router:Router,
@@ -23,19 +25,19 @@ export class ProductoComponent  {
 
   ngOnInit() {
 
-    console.log('Productos lista.component.ts Cargado');
+    console.log("Productos lista.component.ts Cargado");
     // alert(this._productoservice.getProductos())
-    this._productoservice.getProductos().subscribe(
-      resul =>{
-        // this.productos= resul;
-        console.log(resul);
+    // this._productoservice.getProductos().subscribe(
+    //   resul =>{
+    //     // this.productos= resul;
+    //     console.log(resul);
 
-      },
-      error =>{
-        console.log(<any>error);
+    //   },
+    //   error =>{
+    //     console.log(<any>error);
 
-      }
-    );
+    //   }
+    // );
   }
 
 }
