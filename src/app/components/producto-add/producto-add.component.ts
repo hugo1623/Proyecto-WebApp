@@ -8,6 +8,7 @@ import { GLOBAL } from '../../services/global';
 @Component({
   selector: 'app-producto-add',
   templateUrl: './producto-add.component.html',
+  styleUrls: ['./producto-add.component.css'],
   providers: [ProductoService]
 
 })

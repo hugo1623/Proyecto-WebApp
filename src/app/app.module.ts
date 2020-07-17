@@ -12,6 +12,7 @@ import { ComponentsComponent } from './components/components.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { ProductoAddComponent } from './components/producto-add/producto-add.component';
+import { ProductoDetailComponent } from './components/producto-detail/producto-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductoAddComponent } from './components/producto-add/producto-add.com
     ComponentsComponent,
     ErrorComponent,
     ProductoComponent,
-    ProductoAddComponent
+    ProductoAddComponent,
+    ProductoDetailComponent
     
     
   ],
